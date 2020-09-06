@@ -5,10 +5,10 @@
   <!-- <a title="俄语" href="../ru/README.md">🇷🇺</a> -->
 </div>
 
- <div align="center"><a title="" href="https://github.com/ZJCV/TSN"><img align="center" src="./imgs/TSN.png"></a></div>
+ <div align="center"><a title="" href="https://github.com/ZJCV/TRN"><img align="center" src="./imgs/TRN.png"></a></div>
 
 <p align="center">
-  «TSN»复现了论文<a title="" href="https://arxiv.org/abs/1608.00859">Temporal Segment Networks</a>提出的视频分类模型
+  «TSN»复现了论文<a title="" href="https://arxiv.org/abs/1711.08496">Temporal Relation Network</a>提出的视频分类模型
 <br>
 <br>
   <a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square"></a>
@@ -38,7 +38,7 @@
 
 ## 参与贡献方式
 
-欢迎任何人的参与！打开[issue](https://github.com/zjykzj/TSN/issues)或提交合并请求。
+欢迎任何人的参与！打开[issue](https://github.com/zjykzj/TRN/issues)或提交合并请求。
 
 注意:
 
