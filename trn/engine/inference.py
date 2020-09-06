@@ -14,9 +14,9 @@ import torch
 from tqdm import tqdm
 import numpy as np
 
-from tsn.util.metrics import topk_accuracy
-from tsn.util.logger import setup_logger
-from tsn.data.build import build_dataloader
+from trn.util.metrics import topk_accuracy
+from trn.util.logger import setup_logger
+from trn.data.build import build_dataloader
 
 
 def compute_on_dataset(model, data_loader, device):

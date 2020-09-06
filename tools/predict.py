@@ -9,9 +9,9 @@
 
 import cv2
 import torch
-from tsn.data.build import build_test_transform
-from tsn.model.build import build_model
-from tsn.util.checkpoint import CheckPointer
+from trn.data.build import build_test_transform
+from trn.model.build import build_model
+from trn.util.checkpoint import CheckPointer
 
 if __name__ == '__main__':
     epoches = 10

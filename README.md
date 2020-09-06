@@ -8,7 +8,7 @@
  <div align="center"><a title="" href="https://github.com/ZJCV/TRN"><img align="center" src="./imgs/TRN.png"></a></div>
 
 <p align="center">
-  «TSN»复现了论文<a title="" href="https://arxiv.org/abs/1711.08496">Temporal Relation Network</a>提出的视频分类模型
+  «TRN»复现了论文<a title="" href="https://arxiv.org/abs/1711.08496">Temporal Relation Network</a>提出的视频分类模型
 <br>
 <br>
   <a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square"></a>

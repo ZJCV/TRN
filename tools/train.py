@@ -11,15 +11,15 @@ import os
 import torch
 import argparse
 
-from tsn.config import cfg
-from tsn.data.build import build_dataloader
-from tsn.model.build import build_model, build_criterion
-from tsn.optim.build import build_optimizer, build_lr_scheduler
-from tsn.engine.trainer import do_train
-from tsn.engine.inference import do_evaluation
-from tsn.util.checkpoint import CheckPointer
-from tsn.util.logger import setup_logger
-from tsn.util.collect_env import collect_env_info
+from trn.config import cfg
+from trn.data.build import build_dataloader
+from trn.model.build import build_model, build_criterion
+from trn.optim.build import build_optimizer, build_lr_scheduler
+from trn.engine.trainer import do_train
+from trn.engine.inference import do_evaluation
+from trn.util.checkpoint import CheckPointer
+from trn.util.logger import setup_logger
+from trn.util.collect_env import collect_env_info
 
 
 def train(cfg, device):

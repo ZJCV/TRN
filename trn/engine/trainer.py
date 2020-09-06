@@ -12,9 +12,9 @@ import datetime
 import time
 import torch
 
-from tsn.util.metrics import topk_accuracy
-from tsn.util.metric_logger import MetricLogger
-from tsn.engine.inference import do_evaluation
+from trn.util.metrics import topk_accuracy
+from trn.util.metric_logger import MetricLogger
+from trn.engine.inference import do_evaluation
 
 
 def do_train(cfg, arguments,

@@ -15,7 +15,7 @@ import numpy as np
 
 import torch
 from torch.utils.data import Dataset
-from tsn.util.image import rgbdiff
+from trn.util.image import rgbdiff
 
 
 class BaseDataset(Dataset):

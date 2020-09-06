@@ -13,8 +13,8 @@ from torch.utils.data import DataLoader
 from .datasets.build import build_dataset
 from .samplers import IterationBasedBatchSampler
 
-from tsn.data.datasets.hmdb51 import HMDB51
-from tsn.data.datasets.ucf101 import UCF101
+from trn.data.datasets.hmdb51 import HMDB51
+from trn.data.datasets.ucf101 import UCF101
 
 from .transforms.build import build_transform
 
