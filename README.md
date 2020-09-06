@@ -33,8 +33,7 @@
 
 ## 致谢
 
-* [yjxiong/tsn-pytorch](https://github.com/yjxiong/tsn-pytorch)
-* [open-mmlab/mmaction2](https://github.com/open-mmlab/mmaction2)
+* [zhoubolei/TRN-pytorch ](https://github.com/zhoubolei/TRN-pytorch)
 
 ## 参与贡献方式
 
