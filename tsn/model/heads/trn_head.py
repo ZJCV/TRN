@@ -22,10 +22,12 @@ class TRNHead(nn.Module):
 
         in_channels = cfg.MODEL.HEAD.FEATURE_DIMS
         img_feature_dims = cfg.MODEL.HEAD.RELATION.IMG_FEATURE_DIMS
+        dropout_rate = cfg.MODEL.HEAD.DROPOUT
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.fc = nn.Linear(in_channels, img_feature_dims)
         self.relation = build_trn_module(cfg)
+        self.dropout = nn.Dropout(p=dropout_rate)
 
         self.num_segs = cfg.DATASETS.NUM_SEGS
         self.img_feature_dim = img_feature_dims
@@ -33,8 +35,13 @@ class TRNHead(nn.Module):
 
     def forward(self, x):
         x = self.avgpool(x)
+        x = self.dropout(x)
+
         x = torch.flatten(x, 1)
-        x = self.fc(x).reshape(-1, self.num_segs, self.img_feature_dim)
+        x = self.fc(x)
+        x = self.dropout(x)
+
+        x = x.reshape(-1, self.num_segs, self.img_feature_dim)
         x = self.relation(x).reshape(-1, self.num_class)
 
         return x
