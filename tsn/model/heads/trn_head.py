@@ -39,7 +39,6 @@ class TRNHead(nn.Module):
 
         x = torch.flatten(x, 1)
         x = self.fc(x)
-        x = self.dropout(x)
 
         x = x.reshape(-1, self.num_segs, self.img_feature_dim)
         x = self.relation(x).reshape(-1, self.num_class)
